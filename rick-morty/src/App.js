@@ -23,7 +23,7 @@ function App() {
 
 
         {characters ? (
-          <Characters characters={characters} />
+          <Characters characters={characters} setCharacters={setCharacters} />
         ) : (
           <>
             <img src={imageRickMorty} alt="Rick & Morty" className="img-home" />
