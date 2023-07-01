@@ -1,20 +1,13 @@
 import 'semantic-ui-css/semantic.min.css'
-import logo from './logo.svg';
-import './App.css';
-import React from 'react'
-import { Button, Icon } from 'semantic-ui-react'
-
-
+import Container from './components/Container';
+import Header from './components/Header';
+import InputTask from './components/InputTask';
 function App() {
   return (
-    <div>
-      <Button animated>
-        <Button.Content visible>Next</Button.Content>
-        <Button.Content hidden>
-          <Icon name='arrow right' />
-        </Button.Content>
-      </Button>
-    </div>
+    <Container>
+      <Header />
+      <InputTask />
+    </Container>
   );
 }
 
