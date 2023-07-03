@@ -1,5 +1,6 @@
 import { Select, Input, Button, Grid, Header, Icon } from 'semantic-ui-react';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 const options = [
     { key: "deporte", text: "Deporte", value: "Deporte" },
@@ -8,7 +9,7 @@ const options = [
     { key: "Otra", text: "Otra", value: "Otra" },
 ]
 
-export default function InputTask() {
+export default function InputTask(props) {
 
     const [task, setTask] = useState({
         idTask: "",
@@ -18,13 +19,15 @@ export default function InputTask() {
 
     const [error, setError] = useState(false);
 
+    const { createTask } = props;
+
     const onChnageTask = (e) => {
         setTask({
             ...task,
             [e.target.name]: e.target.value
         });
         setError(false);
-        // console.log(e.target.value);
+        console.log(e.target.value);
     }
 
 
@@ -49,13 +52,25 @@ export default function InputTask() {
             setError(true);
             return;
         }
+
+
         // Eliminar mensaje previo
+        setError(false);
 
         // asignar id rand
+        task.idTask = uuidv4();
+        // console.log(task);
 
         // Crear tarea
+        createTask(task);
 
         // Limpiar input
+        setTask({
+            idTask: "",
+            taskName: "",
+            categoryTask: "",
+            // catagoryName: "",
+        });
 
     };
 
