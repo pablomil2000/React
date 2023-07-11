@@ -1,7 +1,14 @@
 import styled from 'styled-components'
 
-export default function Container() {
+export default function Container({ children }) {
     return (
-        <div><p>Desde el container</p></div>
+        <Content>{children}</Content>
     )
 }
+
+const Content = styled.div`
+    
+    max-width:1200px;
+    padding:40px;
+    margin:0 auto;
+`
