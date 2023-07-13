@@ -26,7 +26,7 @@ function App() {
         (
           <Welcome reqApi={reqApi} />
         ) : (
-          <CharacterContainer characters={characters} />
+          <CharacterContainer reqApi={reqApi} characters={characters} />
         )
       }
 

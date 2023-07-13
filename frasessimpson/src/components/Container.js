@@ -7,7 +7,7 @@ export default function Container({ children }) {
 }
 
 const Content = styled.div`
-    
+    text-align:center;
     max-width:1200px;
     padding:40px;
     margin:0 auto;
