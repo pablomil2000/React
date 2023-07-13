@@ -22,7 +22,7 @@ border-radius:20px;
 width:300px;
 text-align:center;
 margin:10px;
-
+overflow: auto;
 &:hover{
     filter:brightness(40%);
 }
