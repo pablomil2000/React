@@ -4,7 +4,7 @@ export default function Character(props) {
     const { dataCharacter } = props;
     const { character, image, quote } = dataCharacter;
 
-    console.log(dataCharacter);
+    // console.log(dataCharacter);
 
     return (
         <ContentCharacters>

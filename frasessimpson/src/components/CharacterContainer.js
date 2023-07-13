@@ -14,7 +14,9 @@ export default function CharacterContainer(props) {
                 ))}
 
             </ContainerCharacter>
-            <button onClick={reqApi}>Cambiar personajes</button>
+            <ContainerButton>
+                <Button onClick={reqApi}>Cambiar personajes</Button>
+            </ContainerButton>
         </>
     )
 
@@ -23,4 +25,28 @@ export default function CharacterContainer(props) {
 
 const ContainerCharacter = styled.div`
 display: flex;
+justify-content:center;
+`
+
+const ContainerButton = styled.div`
+width: 100%;
+text-align: center;
+`
+
+const Button = styled.button`
+    width: 250px;
+    background-color: #e76f51;
+    color:#fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius:20px;
+    font-size:18px;
+    margin-top:40px;
+
+    transition:all 0.2s ease-out;
+    &:hover{
+        cursor:pointer;
+        background-color:#1c0950;
+    }
+
 `
