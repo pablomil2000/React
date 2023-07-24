@@ -16,6 +16,11 @@ function App() {
           <Route path="/inicio" element={<Home />} />
           <Route path="/series" element={<Series />} />
           <Route path="/comics" element={<Comincs />} />
+
+
+
+          {/* Si ninguna pagina coincide */}
+          <Route path="*" element={<Error />} />
         </Routes>
 
         {/* Version 5 */}
