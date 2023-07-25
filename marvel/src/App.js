@@ -5,12 +5,16 @@ import Home from "./pages/home"
 import Series from "./pages/series"
 import Comincs from "./pages/comics"
 import Error from "./pages/errror404"
+import Header from './components/header';
+
 
 function App() {
   return (
     <div>
       {/* Version 6 */}
       <BrowserRouter>
+        <Header />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/inicio" element={<Home />} />
