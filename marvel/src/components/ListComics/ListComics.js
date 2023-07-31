@@ -2,7 +2,7 @@ import { Card, Dimmer, Image, Loader, Icon, Button } from "semantic-ui-react";
 import '../ListComics/ListComics.scss'
 
 
-export default function ListComics({ ListComics }) {
+export default function ListComics({ ListComics, renderComics, setRenderComics }) {
     // console.log(ListComics);
 
     const { loading, result } = ListComics
@@ -16,6 +16,15 @@ export default function ListComics({ ListComics }) {
     }
 
     const { results } = result.data;
+
+
+    const loadMoreComics = () => {
+        const numberComics = renderComics;
+        setRenderComics(numberComics + 5);
+    }
+
+
+
 
     return (
         <Card.Group itemsPerRow={5}>
@@ -40,6 +49,13 @@ export default function ListComics({ ListComics }) {
                     </Card.Content>
                 </Card>
             ))}
+
+            <div className="container-button">
+                <Button color="red" onClick={() => loadMoreComics()} >
+                    <Icon name="plus" />
+                    Cargar mas comics
+                </Button>
+            </div>
         </Card.Group>
     )
 

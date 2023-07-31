@@ -20,7 +20,7 @@ export default function Comincs() {
                     <Grid.Column>
                         <Container bg="light">
                             <Header as="h2">Los ultimos comics de Marvel</Header>
-                            <ListComics ListComics={listComics} />
+                            <ListComics ListComics={listComics} renderComics={renderComics} setRenderComics={setRenderComics} />
                         </Container>
                     </Grid.Column>
                 </Grid>
