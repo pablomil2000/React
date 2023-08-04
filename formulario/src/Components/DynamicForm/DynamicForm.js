@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Container } from "react-bootstrap";
 import './DynamicForm.css'
+import FirstStep from "./FirstStep";
+import SecondStep from "./SecondStep";
+import ThirdStep from "./ThirdStep";
 
 export default function DynamicForm() {
     const [step, setStep] = useState(1);
@@ -31,21 +34,42 @@ export default function DynamicForm() {
                     <h1 className="title-dynamic-form"> Fill the form</h1>
                     <p className="steps-numbers">Step {step} of 3</p>
 
-                    <div className="actions">
-                        <div className="container-text">
-                            <p className="before" onClick={() => showPreviusStep()}>
-                                Before Step
-                            </p>
-                        </div>
+                    {getPageByStep(step, setStep)}
 
-                        <div className="container-text">
-                            <p className="next" onClick={() => showNextStep()}>
-                                Next Step
-                            </p>
-                        </div>
+                    <div className="actions">
+                        {step > 1 && step < 4 && (
+                            <div className="container-text">
+                                <p className="before" onClick={() => showPreviusStep()}>
+                                    ⬅️ Before Step
+                                </p>
+                            </div>
+                        )}
+
+
+                        {step < 3 && (
+                            <div className="container-text">
+                                <p className="next" onClick={() => showNextStep()}>
+                                    Next Step ➡️
+                                </p>
+                            </div>
+
+                        )}
+
                     </div>
                 </div>
             </Container >
         </div >
     );
+}
+
+
+function getPageByStep(step, setStep) {
+    if (step === 1) {
+        return <FirstStep />
+    } else if (step === 2) {
+        return <SecondStep />
+    } else if (step === 3) {
+        return <ThirdStep />
+
+    }
 }
