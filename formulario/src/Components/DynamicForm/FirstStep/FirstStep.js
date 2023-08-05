@@ -30,10 +30,12 @@ export const fruits = [
 
 export default function FirstStep() {
 
-    const [SelectedCard, SetSelectedCard] = useState(null)
+    const [SelectedCard, SetSelectedCard] = useState(null);
 
     const clickCard = (fruit) => (
-        SetSelectedCard(fruit.id)
+        SetSelectedCard(fruit.id),
+        localStorage.setItem('fruitId', fruit.id),
+        localStorage.setItem('fruitIcon', fruit.icon)
     );
 
     return (
