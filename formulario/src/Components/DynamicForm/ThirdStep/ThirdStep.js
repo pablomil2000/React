@@ -13,7 +13,10 @@ export default function SecondStep() {
                         </FloatingLabel>
                     </Col>
                 </Row>
-            </Container>
-        </div>
+                <div className="send-form">
+                    <p className='result p-3' onClick={() => console.log("view result")}>View result 🙌🏻</p>
+                </div>
+            </Container >
+        </div >
     )
 }
