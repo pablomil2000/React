@@ -2,11 +2,10 @@
   background-image: linear-gradient(
     108deg,
     #b16cea 8%,
-    #ff5e68 40%,
+    #ff5e69 40%,
     #ff8a56 77%,
     #ffa84b 91%
   );
-
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -17,5 +16,5 @@
   color: #000;
   background-image: none;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 22px;
 }

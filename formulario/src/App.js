@@ -1,12 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBarMenu from './Components/NavBarMenu'
-import Introduction from './Components/Introduction'
-import Services from './Components/Services';
-import DynamicForm from './Components/DynamicForm';
+import DynamicForm from "./components/DynamicForm/DynamicForm";
+import Introduction from "./components/Introduction";
+import NavbarMenu from "./components/NavbarMenu";
+import Services from "./components/Services";
+
 function App() {
   return (
     <div>
-      <NavBarMenu />
+      <NavbarMenu />
       <Introduction />
       <Services />
       <DynamicForm />

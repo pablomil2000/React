@@ -1,20 +1,28 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import { Container, Navbar } from "react-bootstrap";
 
-export default function NavBarMenu() {
-    return (
-        <div>
-            <Navbar className="bg-body-tertiary">
-                <Container>
-                    <Navbar.Brand href="#home">
-                        Dynamic Form
-                    </Navbar.Brand>
-                    <Navbar.Text>
-                        Signed in as:{" "}
-                        <a href="https://github.com/pablomil2000" target='_blank' rel="noreferrer">Pablo Martin</a>
-                    </Navbar.Text>
-                </Container>
-            </Navbar>
-        </div>
-    )
+export default function NavbarMenu() {
+  return (
+    <div>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#!">
+            Dynamic <b>Form</b>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+          <Navbar.Collapse className="justify-content-end">
+            <Navbar.Text>
+              Signed in as:{" "}
+              <a
+                href="https://rafatarrega.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Rafa Tárrega
+              </a>
+            </Navbar.Text>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </div>
+  );
 }
