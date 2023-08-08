@@ -1,3 +1,3 @@
 export default function Home() {
-    <div>Desde home</div>
+    return(<div>Desde home</div>)
 }

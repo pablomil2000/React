@@ -1,36 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Box, Container} from '@chakra-ui/react'
+import {Routes, Route} from 'react-router-dom'
+
+import Navbar from './components/Navbar'
+
+import Home from './pages/Home'
+import Surtidor from './pages/Surtidor'
+import MethodPayment from './pages/MethodPayment'
+import Product from './pages/Product'
+import Quality from './pages/Quality'
+import Resume from './pages/Resume'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-      <Button colorScheme='blue'>Button</Button>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Box w="100%" h="100vh">
+      <Navbar/>
+      <Container>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/surtidor" element={<Surtidor/>}/>
+          <Route path="/MethodPayment" element={<MethodPayment/>}/>
+          <Route path="/Product" element={<Product/>}/>
+          <Route path="/Quality" element={<Quality/>}/>
+          <Route path="/Resume" element={<Resume/>}/>
+          <Route path="/Surtidor" element={<Surtidor/>}/>
+          
+        </Routes>
+      </Container>
+    </Box>
   )
 }
 
