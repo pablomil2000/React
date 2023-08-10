@@ -12,19 +12,20 @@ import Quality from './pages/Quality'
 import Resume from './pages/Resume'
 
 function App() {
+
   return (
     <Box w="100%" h="100vh">
       <Navbar/>
       <Container>
         <Routes>
           <Route path="/" element={<Home/>}/>
+          <Route path="/home" element={<Home/>}/>
           <Route path="/surtidor" element={<Surtidor/>}/>
           <Route path="/MethodPayment" element={<MethodPayment/>}/>
           <Route path="/Product" element={<Product/>}/>
           <Route path="/Quality" element={<Quality/>}/>
           <Route path="/Resume" element={<Resume/>}/>
           <Route path="/Surtidor" element={<Surtidor/>}/>
-          
         </Routes>
       </Container>
     </Box>
