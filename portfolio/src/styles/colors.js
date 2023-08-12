@@ -11,4 +11,6 @@ export const colors = {
     BOX_SHADOW: "0 0 20px rgba(0, 0, 0, 0.04)",
     BOX_SHADOW_BLUE: " -3px 4px 0 rgb(102 153 255)",
     BOX_SHADOW_BUTTON: "0 10px 20px -10px #b664b0",
+    logo1: "coral",
+    logo2: "#b10b0b",
 };
