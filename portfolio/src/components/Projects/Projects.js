@@ -19,6 +19,7 @@ const Projects = () => {
                             {project.techs.map((tech, index) => (
                                 <div key={index}>
                                     <img src={tech.src} alt={tech.name} loazy="true" />
+                                    <p>{tech.name}</p>
                                 </div>
                             ))}
                         </S.ContainerTechs>
