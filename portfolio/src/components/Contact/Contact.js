@@ -61,7 +61,7 @@ const Contact = () => {
             <S.Title>Contatca con migo</S.Title>
             <S.ContainerForm>
                 {successSendForm ? (
-                    <p>Mensaje enviado con exito!</p>
+                    <S.SucessMessage>Mensaje enviado con exito!</S.SucessMessage>
                 ) : (
                     <S.Form onSubmit={onSubmit} ref={form}>
                         <S.InputForm placeholder='Nombre' type='text' name='name' onChange={(e) => setContactDates({ ...contactDates, name: e.target.value })} value={contactDates.name} />
@@ -69,7 +69,7 @@ const Contact = () => {
                         <S.TextArea placeholder='Mensaje' name='message' onChange={(e) => setContactDates({ ...contactDates, message: e.target.value })} value={contactDates.message} />
                         <S.ContainerConditions>
                             <input type='checkbox' name='checkbox' onClick={(e) => setContactDates({ ...contactDates, acepted: e.target.checked })} />
-                            <span>Acepto terminos y condiciones</span>
+                            <span>Enviar este mensaje</span>
                         </S.ContainerConditions>
                         <S.Button type='submit'>Enviar</S.Button>
                     </S.Form>
@@ -77,7 +77,9 @@ const Contact = () => {
                 )}
 
                 {emptyInputs && (
-                    <p>Tienes que rellenar todos los inputs</p>
+                    <S.TextError>
+                        Tienes que rellenar todos los inputs
+                    </S.TextError>
                 )}
             </S.ContainerForm>
         </S.ContainerContact>
