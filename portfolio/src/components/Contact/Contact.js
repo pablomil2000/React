@@ -16,7 +16,7 @@ const Contact = () => {
 
     const onSubmit = (e) => {
         setEmptyInputs(false);
-        console.log("click submit");
+        // console.log("click submit");
         // No reload
         e.preventDefault();
 
@@ -54,10 +54,10 @@ const Contact = () => {
 
     }
 
-    console.log(contactDates);
+    // console.log(contactDates);
 
     return (
-        <S.ContainerContact>
+        <S.ContainerContact id='contact'>
             <S.Title>Contatca con migo</S.Title>
             <S.ContainerForm>
                 {successSendForm ? (

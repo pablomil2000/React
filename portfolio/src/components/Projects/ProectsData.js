@@ -23,7 +23,7 @@ export const projectsPortfolio = [
             { name: "CSS", src: cssImage },
         ],
         description:
-            "Application created with React JS and CSS to make a request an external API of Rick & Morty.",
+            "Aplicacion creada con React JS y CSS para hacer peticiones externas a la API de Rick & Morty.",
         repository: "https://github.com/pablomil2000/React/tree/main/rick-morty",
         website: "https://pabloproyectosapirickandmorty.netlify.app",
     },
@@ -35,9 +35,9 @@ export const projectsPortfolio = [
             { name: "Semantic UI React", src: semanticImage },
         ],
         description:
-            "Application created with React JS and Semantic UI to make a list of tasks where you can add or remove it.",
+            "Aplicacion creada con React JS y Semantic UI para realizar una lista de tareas donde puedas añadir o borrar tareas pendientes.",
         repository: "https://github.com/pablomil2000/React/tree/main/todolist",
-        website: "#!",
+        website: "https://pabloproyectostodolist.netlify.app",
     },
     {
         title: "Simpson API",
@@ -47,9 +47,9 @@ export const projectsPortfolio = [
             { name: "Styled Components", src: styledImage },
         ],
         description:
-            "Application created with React JS and Styled Components to make a request an external API of Simpsons.",
+            "Aplicacion creada con React JS y Styled Components para hacer peticiones a la API externa de los Simpsons.",
         repository: "https://github.com/pablomil2000/React/tree/main/frasessimpson",
-        website: "https://pabloproyectostodolist.netlify.app",
+        website: "https://pabloproyectosimpson.netlify.app",
     },
     {
         title: "Marvel API",
@@ -61,7 +61,7 @@ export const projectsPortfolio = [
             { name: "Semantic", src: semanticImage },
         ],
         description:
-            "Application created with React JS, React Router and Sass to make a request an external API of Marvel.",
+            "Aplicacion creada con React JS, React Router y Sass para hacer peticiones a la API externa de Marvel.",
         repository: "https://github.com/pablomil2000/React/tree/main/marvel",
         website: "https://pabloproyecto-marvel.netlify.app",
     },
@@ -73,7 +73,7 @@ export const projectsPortfolio = [
             { name: "React Bootstrap", src: reactBootstrapImage },
         ],
         description:
-            "Application of a landing page created with React JS and React Bootstrap to make a form with dynamic fields.",
+            "Aplicación de una landing page creada con React JS y React Bootstrap para hacer un formulario con campos dinámicos.",
         repository: "https://github.com/pablomil2000/React/tree/main/formulario",
     },
     {
@@ -85,7 +85,7 @@ export const projectsPortfolio = [
             { name: "React Router DOM", src: reactRouterdomImage },
         ],
         description:
-            "Application created with Vite where you can save the information and see it on a summary",
+            "Aplicación creada con Vite donde puedes guardar la información y verla en un resumen",
         repository: "https://github.com/pablomil2000/React/tree/main/Gasolinera-react",
     },
 ];

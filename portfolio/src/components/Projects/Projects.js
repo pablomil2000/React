@@ -4,11 +4,11 @@ import { projectsPortfolio } from './ProectsData'
 import logoGit from '../../svg/github.svg'
 import logoSite from '../../svg/website.svg'
 
-console.log(projectsPortfolio);
+// console.log(projectsPortfolio);
 const Projects = () => {
     return (
-        <S.ContainerProjects>
-            <S.Title>Some of {" "}<span>{" "} <br />My Projects</span></S.Title>
+        <S.ContainerProjects id='projects'>
+            <S.Title>Algunos de {" "}<span>{" "} <br />Mis proyectos</span></S.Title>
 
             <S.ContentProject>
                 {projectsPortfolio.map((project, index) => (

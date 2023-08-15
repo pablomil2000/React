@@ -31,18 +31,15 @@ const AboutMe = () => {
     ];
 
     return (
-        <S.ContainerAboutMe>
+        <S.ContainerAboutMe id='about-me'>
             <S.ContainerFlex>
                 <S.ContainerText>
                     <S.Title>
-                        <p>👋 Hello, I'm</p>
+                        <p>👋 Hola, Soy</p>
                         <p>Pablo Martín López</p>
-                        <p>Web Developer</p>
+                        <p>Desarrollador Web</p>
                     </S.Title>
                     <S.DescriptionText>
-                        loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum
-                        loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum
-                        loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum loren ipsum
                     </S.DescriptionText>
 
                     <S.ContainerIcons>
